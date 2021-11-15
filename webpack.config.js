@@ -27,6 +27,12 @@ module.exports = {
                 generator: {
                     filename: "icon/[name].[hash:4][ext]"
                 }
+            },
+            {
+                test: /\.m?js$/,
+                use:{
+                    loader:"babel-loader"         
+                }
             }
         ]
     },
