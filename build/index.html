@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="./favicon.ico">
     <title>线上环境</title>
+    <script src="https://unpkg.com/vue@next"></script>
   <script defer src="build.js"></script></head>
   <body>
     <noscript>
       <strong>We're sorry but 线上环境 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <template id="my-app">
+      <h2>我是vue渲染出来的</h2>
+      <h2>{{title}}</h2>
+    </template>
   </body>
 </html>

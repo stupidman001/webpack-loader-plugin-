@@ -9,22 +9,29 @@
   "dependencies": {
     "@babel/plugin-transform-block-scoping": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
+    "D": "^1.0.0",
+    "vue": "^3.2.22",
     "webpack": "^5.64.0",
     "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/plugin-transform-arrow-functions": "^7.16.0",
+    "@vue/compiler-sfc": "^3.2.22",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^9.1.0",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "vue-loader": "^16.8.3",
+    "webpack-dev-server": "^4.5.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack"
+    "build": "npx webpack",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --config wk.config.js"
   },
   "author": "",
   "license": "ISC"

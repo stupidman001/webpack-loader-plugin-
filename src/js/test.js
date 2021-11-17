@@ -1,6 +1,7 @@
-const a = 1
-const b = 2
-let c = 3
-let d = 4
-// [1,2,3].map((item) => item + 1)
-console.log('打包文件中的提示')
+// 导入 vue 资源
+import { createApp } from "vue/dist/vue.esm-bundler.js";
+
+// 引入 vue 文件
+import App from "../page/App.vue"
+
+createApp(App).mount('#app')
